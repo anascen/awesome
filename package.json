@@ -1,0 +1,42 @@
+{
+  "name": "@ascen/awesome",
+  "description": "An awesome commiter by ascen.",
+  "version": "1.0.0",
+  "module": "./build/index.js",
+  "exports": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "./build",
+    "./LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anascen/awesome.git"
+  },
+  "keywords": [
+    "ascen",
+    "awesome",
+    "anascen",
+    "git",
+    "hooks",
+    "pre-commit",
+    "pre-commits",
+    "hook"
+  ],
+  "author": "ascen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anascen/awesome/issues"
+  },
+  "homepage": "https://github.com/anascen/awesome#readme",
+  "devDependencies": {
+    "@ascen/corus-tsconfig": "^1.2.1",
+    "@types/node": "^20.9.4",
+    "typescript": "^5.3.2",
+    "vitepress": "^1.0.0-rc.29"
+  }
+}

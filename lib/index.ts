@@ -20,7 +20,7 @@ const git = (args: string[]): SpawnSyncReturns<Buffer> => {
 /*
  * Install awesome
  */
-export const install = (dir = "awesome"): void => {
+export const install = (dir = ".awesome"): void => {
 	if (process.env["AWESOME"] === "0") {
 		logger("awesome env variable is set to 0, skipping install");
 		return;

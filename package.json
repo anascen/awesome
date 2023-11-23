@@ -6,8 +6,9 @@
   "exports": "./build/index.js",
   "types": "./build/index.d.ts",
   "main": "build/index.js",
+  "bin": "build/bin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "files": [
     "./build",

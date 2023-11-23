@@ -38,6 +38,15 @@
 	"devDependencies": {
 		"@ascen/corus-tsconfig": "^1.2.1",
 		"@types/node": "^20.9.4",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
 		"typescript": "^5.3.2"
+	},
+	"dependencies": {
+		"@ascen/awesome": "^1.1.1"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown",
+		"**/**/*": "prettier --write --ignore-unknown"
 	}
 }

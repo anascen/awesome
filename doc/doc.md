@@ -1,8 +1,8 @@
 # awesome
 
 ```
-npm install --save-dev awesome lint-staged
+npm install awesome lint-staged
 npx awesome install
 npm pkg set scripts.prepare="awesome install"
-npx awesome add .husky/pre-commit "npx lint-staged"
+npx awesome add .awesome/pre-commit "npx lint-staged"
 ```

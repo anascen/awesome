@@ -1,52 +1,50 @@
 {
-	"name": "@ascen/awesome",
-	"description": "An awesome commiter by ascen.",
-	"version": "1.1.1",
-	"module": "./build/index.js",
-	"exports": "./build/index.js",
-	"types": "./build/index.d.ts",
-	"main": "build/index.js",
-	"bin": "build/bin.js",
-	"scripts": {
-		"build": "tsc",
-		"postversion": "npm run build && npm publish"
-	},
-	"files": [
-		"./build",
-		"./LICENSE"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/anascen/awesome.git"
-	},
-	"keywords": [
-		"ascen",
-		"awesome",
-		"anascen",
-		"git",
-		"hooks",
-		"pre-commit",
-		"pre-commits",
-		"hook"
-	],
-	"author": "ascen",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/anascen/awesome/issues"
-	},
-	"homepage": "https://github.com/anascen/awesome#readme",
-	"devDependencies": {
-		"@ascen/corus-tsconfig": "^1.2.1",
-		"@types/node": "^20.9.4",
-		"lint-staged": "^15.1.0",
-		"prettier": "^3.1.0",
-		"typescript": "^5.3.2"
-	},
-	"dependencies": {
-		"@ascen/awesome": "^1.1.1"
-	},
-	"lint-staged": {
-		"**/*": "prettier --write --ignore-unknown",
-		"**/**/*": "prettier --write --ignore-unknown"
-	}
+    "name": "@ascen/awesome",
+    "description": "An awesome commiter by ascen.",
+    "version": "1.1.1",
+    "module": "./build/index.js",
+    "exports": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "main": "build/index.js",
+    "bin": "build/bin.js",
+    "scripts": {
+        "build": "tsc",
+        "postversion": "npm run build && npm publish",
+        "prepare": "awesome install"
+    },
+    "files": [
+        "./build",
+        "./LICENSE"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anascen/awesome.git"
+    },
+    "keywords": [
+        "ascen",
+        "awesome",
+        "anascen",
+        "git",
+        "hooks",
+        "pre-commit",
+        "pre-commits",
+        "hook"
+    ],
+    "author": "ascen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anascen/awesome/issues"
+    },
+    "homepage": "https://github.com/anascen/awesome#readme",
+    "devDependencies": {
+        "@ascen/corus-tsconfig": "^1.2.1",
+        "@types/node": "^20.9.4",
+        "lint-staged": "^15.1.0",
+        "prettier": "^3.1.0",
+        "typescript": "^5.3.2"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write",
+        "**/**/*": "prettier --write"
+    }
 }

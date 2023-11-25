@@ -43,6 +43,11 @@
         "prettier": "^3.1.0",
         "typescript": "^5.3.2"
     },
+    "awesome": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
     "lint-staged": {
         "**/*": "prettier --write",
         "**/**/*": "prettier --write"

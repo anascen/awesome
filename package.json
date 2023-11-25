@@ -9,8 +9,7 @@
     "bin": "build/bin.js",
     "scripts": {
         "build": "tsc",
-        "postversion": "npm run build && npm publish",
-        "prepare": "awesome install"
+        "postversion": "npm run build && npm publish"
     },
     "files": [
         "./build",

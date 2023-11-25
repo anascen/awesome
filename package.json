@@ -1,7 +1,7 @@
 {
     "name": "@ascen/awesome",
     "description": "An awesome commiter by ascen.",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "module": "./build/index.js",
     "exports": "./build/index.js",
     "types": "./build/index.d.ts",

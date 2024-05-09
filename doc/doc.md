@@ -2,7 +2,7 @@
 
 ```
 npm install awesome lint-staged
-npx awesome install
+npx awesome init
 npm pkg set scripts.prepare="awesome install"
 npx awesome add .awesome/pre-commit "npx lint-staged"
 ```
